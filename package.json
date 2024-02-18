@@ -1,0 +1,21 @@
+{
+  "name": "htmx-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/node": "^8.2.0",
+    "astro": "^4.4.0",
+    "astro-htmx": "^1.0.5",
+    "htmx.org": "^1.9.10"
+  },
+  "devDependencies": {
+    "eslint-plugin-astro": "^0.31.4"
+  }
+}
