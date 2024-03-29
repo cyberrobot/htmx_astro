@@ -12,9 +12,17 @@ export const partial = true;
 
 {
   locations.length > 0 && (
-    <div class="dropdown">
+    <div
+      class="dropdown"
+    >
       {locations.map((item) => (
-        <div class="dropdown__link__search_item">
+        <div
+          class="dropdown__link__search_item"
+          x-data=`{
+            item: ${JSON.stringify(item)},
+          }`
+          @click="$store.weatherStore.setWeather(item)"
+        >
           <div class="dropdown__link__search-item__text">
             <div class="dropdown__link__search_item__title">{item.name}</div>
             <div class="dropdown__link__search_item__subtitle">
